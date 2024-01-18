@@ -49,7 +49,7 @@ jekyll-archives:
 # Disqus comments
 disqus:
   comments: true
-  shortname: dinhoitt
+  shortname: 'dinhoitt'
 
 # Google analytics
 # ga_tracking_id: "UA-XXXX-1"
