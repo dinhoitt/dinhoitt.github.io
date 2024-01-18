@@ -31,9 +31,14 @@ layout: default
 
 <article class="post-content">
   {{ content }}
-  {% if site.disqus.shortname %}
-    {% include disqus.html %}
-  {% endif %}
+  <script src="https://utteranc.es/client.js"
+        repo="dinhoitt / dinhoitt.github.io"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
 </article>
 
 {% if site.jekyll-archives %}
@@ -121,7 +126,13 @@ layout: default
 	</section>
 {% endif %}
 
-
+<script src="https://utteranc.es/client.js"
+        repo="dinhoitt / dinhoitt.github.io"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
 
 </div>
 </div>
