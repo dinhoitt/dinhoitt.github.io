@@ -46,25 +46,7 @@ jekyll-archives:
     category: '/category/:name/'
     tag: '/tag/:name/'
 
-defaults:
-  # _posts
-  - scope:
-      path: "https://dinhoitt.github.io/"
-      type: post
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
 
-repository: "dinhoitt / dinhoitt.github.io"
-comments:
-  provider: "utterances"
-  utterances:
-    theme: "github-light" 
-    issue_term: "pathname"
 
 # Google analytics
 # ga_tracking_id: "UA-XXXX-1"
