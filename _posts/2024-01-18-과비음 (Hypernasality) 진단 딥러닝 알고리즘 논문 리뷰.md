@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "과비음 (Hypernasality) 진단 딥러닝 알고리즘 논문 리뷰"
+comment: true
 date:   2024-01-18T05:25:52+09:00
 author: DINHO
-categories: "논문 리뷰"
+categories: "논문-리뷰"
 cover:  "/assets/post_논문리뷰1.png"
 ---
 
