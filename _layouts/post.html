@@ -32,15 +32,16 @@ layout: default
 <article class="post-content">
   {{ content }}
 </article>
-<section class="comments">
+<div>
   <script src="https://utteranc.es/client.js"
         repo="dinhoitt / dinhoitt.github.io"
-        issue-term="title"
+        issue-term="pathname"
+        label="Comments"
         theme="github-light"
         crossorigin="anonymous"
         async>
   </script>
-</section>
+</div>
 
 
 {% if site.jekyll-archives %}
@@ -52,7 +53,7 @@ layout: default
 {% endif %}
 
 <section class="rss">
-  <p class="rss-subscribe text"><strong>Follow <a href="https://github.com/dinhoitt">via RSS</a></strong></p>
+  <p class="rss-subscribe text"><strong>Follow <a href="https://github.com/dinhoitt">my github</a></strong></p>
 </section>
 
 <section class="share">
