@@ -32,14 +32,16 @@ layout: default
 <article class="post-content">
   {{ content }}
 </article>
-
-<script src="https://utteranc.es/client.js"
+<section class="comments">
+  <script src="https://utteranc.es/client.js"
         repo="dinhoitt / dinhoitt.github.io"
         issue-term="title"
         theme="github-light"
         crossorigin="anonymous"
         async>
-</script>
+  </script>
+</section>
+
 
 {% if site.jekyll-archives %}
 {% if page.tags.size > 0 %}
