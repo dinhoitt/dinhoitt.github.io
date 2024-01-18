@@ -40,13 +40,13 @@ cover:  "/assets/post_논문리뷰1.png"
 - 비강 모음(Nasal Vowels, NV): 모음을 발음할 때 코로 소리를 내야 하면 비강 모음이라고 합니다.
 - 구강 모음(Oral Vowels, OV): 모음을 발음할 때 입으로 소리를 내면 구강 모음이라고 합니다.
 
-![조음 기관-출처:ratsgo.github.io](https://i.imgur.com/oKrqW5Y.jpg)
+![조음 기관-출처:ratsgo.github.io](https://i.imgur.com/oKrqW5Y.jpg "이미지 출처:ratsgo.github.io")
 
 이해가 되셨을까요?? 더 쉽게 이야기 해드리자면 **비강 발음은 콧소리가 나기 때문에 코를 막고 발음하기 어렵습니다.**. 요즘 유명한 인플루언서 '냥뇽녕냥'님을 코를 막고 불러 보세요. 굉장히 어렵습니다ㅋㅋㅋㅋㅋ 그에 비해 **구강 발음은 코를 막고도 발음하기 쉽습니다.** '축구를 하고 풋살해서 졸려'라는 문장을 코를 막고 말해보세요. 굉장히 쉽게 발음할 수 있습니다.
 
 '축구를 하고 풋살해서 졸려'처럼 비강 발음이 없는 문장을 말할 때 과하게 콧소리가 나면, 즉, 과비음(Hypernasality)이 있다면??!! 구순구개열, 더 나아가 조음 장애를 겪고 있다라고 판단할 수 있는 것이죠!! (조음이란 소리를 낼 때의 구조를 뜻합니다.)
 
-![NASOMETER-출처:somnotec](https://www.somnotec.net/wp-content/uploads/2014/01/jaredwithheadsetcloseup1.jpg)
+![NASOMETER-출처:somnotec](https://www.somnotec.net/wp-content/uploads/2014/01/jaredwithheadsetcloseup1.jpg "이미지 출처:somnotec")
 
 사진과 같이 과비음(Hypernasality)을 측정하여 언어적인 문제를 진단하는 방법 중 가장 유명한 방법으로는 Nasometer라는 것이 있습니다. 하지만 이 방법은 돈과 시간이 상당히 많이 듭니다. 
 
