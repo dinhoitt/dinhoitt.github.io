@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "How to use jekyll2"
 date:   2015-04-20 08:43:59
 author: Ben Centra
 categories: Jekyll
-tags:	jekyll welcome
+tags:	"jekyll welcome"
 cover:  "/assets/instacode.png"
 ---
 
