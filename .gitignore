@@ -5,6 +5,7 @@
 
 # Sass garbage
 .sass-cache
+_site
 
 # Bundler
 .bundle/
