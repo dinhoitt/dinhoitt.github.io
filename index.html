@@ -49,12 +49,12 @@ pagination:
   <ul>
     {% if paginator.previous_page %}
     <li>
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">다음</a>
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">이전</a>
     </li>
     {% endif %}
     {% if paginator.next_page %}
     <li>
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">이전</a>
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">다음</a>
     </li>
     {% endif %}
   </ul>
