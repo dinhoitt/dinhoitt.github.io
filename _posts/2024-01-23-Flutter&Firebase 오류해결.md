@@ -4,6 +4,9 @@ title:  "Flutter&Firebase 오류 해결"
 date:   2024-01-23T14:03:52+09:00
 author: DINHO
 categories: "Flutter"
+sitemap :
+  changefreq : weekly
+  priority : 1.0
 cover:  "/assets/post/flutter.jpg"
 ---
 
