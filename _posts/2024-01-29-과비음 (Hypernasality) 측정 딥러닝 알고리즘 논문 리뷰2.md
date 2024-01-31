@@ -4,9 +4,6 @@ title:  "과비음 (Hypernasality) 측정 딥러닝 알고리즘 논문 리뷰2"
 date:   2024-01-29T03:15:52+09:00
 author: DINHO
 categories: "논문-리뷰"
-sitemap :
-  changefreq : weekly
-  priority : 1.0
 cover:  "/assets/post_논문리뷰1.png"
 ---
 
