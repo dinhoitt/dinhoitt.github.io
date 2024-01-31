@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "FFT with python"
+title:  "FFT with Python"
 date:   2024-01-31T03:08:52+09:00
 author: DINHO
 categories:
