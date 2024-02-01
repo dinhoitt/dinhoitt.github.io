@@ -10,7 +10,7 @@ sitemap :
 cover:  "/assets/post/flutter.jpg"
 ---
 
-무조건 해결!! PlatformException (PlatformException(sign_in_failed, com.google.android.gms.common.api.ApiException: 10: , null, null))
+무조건 해결하자!! PlatformException (PlatformException(sign_in_failed, com.google.android.gms.common.api.ApiException: 10: , null, null))
 
 플루터로 개발을 하다가 이런 오류를 보신 적 있으신가요? 보통 Firebase를 이용해서 구글 로그인을 할 때 생기는 문제인데요. 요악하자면 SHA-1키 문제입니다. 
 
