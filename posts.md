@@ -5,15 +5,26 @@ permalink: /posts/
 main_nav: true
 ---
 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var categories = document.querySelectorAll('.category-name');
+  categories.forEach(function(cat) {
+    cat.addEventListener('click', function() {
+      var postsList = this.nextElementSibling;
+      if (postsList.style.display === 'none') {
+        postsList.style.display = 'block';
+      } else {
+        postsList.style.display = 'none';
+      }
+    });
+  });
+});
+</script>
+
 {% for category in site.categories %}
   {% capture cat %}{{ category | first }}{% endcapture %}
-  <h2 id="{{cat}}">{{ cat | capitalize }}</h2>
-  {% for desc in site.descriptions %}
-    {% if desc.cat == cat %}
-      <p class="desc"><em>{{ desc.desc }}</em></p>
-    {% endif %}
-  {% endfor %}
-  <ul class="posts-list">
+  <h2 class="category-name" id="{{cat}}" style="cursor:pointer;">{{ cat | capitalize }}</h2>
+  <ul class="posts-list" style="display:none;">
   {% for post in site.categories[cat] %}
     <li>
       <strong>
