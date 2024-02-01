@@ -92,7 +92,7 @@ void fft2D(Complex* data, int width, int height) {
 - Band-pass 필터를 적용하여 주파수 도메인에서 Amplitude를 확인
 - 필터를 적용한 신호를 시간 도메인에서 Amplitude를 확인
 
-아래는 Python Code입니다.
+아래는 Python Code입니다. 한 줄 한 줄 따라 써보시면서 전체적인 흐름을 이해하시면 FFT를 쉽게 이해하실 수 있을 겁니다. 
 
 ```Python
 import numpy as np
@@ -199,10 +199,12 @@ filtered_data_int16 = np.int16(filtered_data_unnormalized)
 
 # 필터링된 신호를 WAV 파일로 저장
 wavfile.write('C:/Users/Home/Desktop/testfft_filtered.wav', fs, filtered_data_int16)
-
-
-
-
 ```
 
+아래는 결과 이미지 입니다. 필터링도 잘 적용 됐고, 음성 신호의 주파수 특성을 파악할 수 있습니다.
 
+<img src="/assets/post/fft1.png"><img src="/assets/post/fft2.png"><img src="/assets/post/fft3.png"><img src="/assets/post/fft4.png">
+
+다음에는 위에서 얻은 그래프와 함께 스펙트로그램도 출력시켜보겠습니다. 이번 글은 길지만 그만큼 알찬 내용이라 생각합니다.
+
+도움이 되셨길 바랍니다😁😁
