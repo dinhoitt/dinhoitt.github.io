@@ -50,11 +50,17 @@ jekyll-archives:
 
 # Category descriptions (for archive pages)
 descriptions:
-  - cat: jekyll
-    desc: "Posts describing Jekyll setup techniques."
+  - cat: 논문-리뷰
+    desc: "연구 과제를 수행하거나 전공 공부를 하면서 읽은 논문들을 정리한 공간입니다."
 
-  - cat: dummy
-    desc: "Just some placeholder posts, lorem ipsum and the rest."
+  - cat: Flutter
+    desc: "앱 프론트 엔드 개발하면서 Flutter에 대한 공부를 정리한 공간입니다."
+  
+  - cat: 신호-처리-이론
+    desc: "전자공학과 재학 중 배운 내용 및 인공지능을 공부하면서 꼭 필요한 신호 처리 내용을 정리한 공간입니다."
+
+  - cat: Python
+    desc: "공부한 이론을 Python을 바탕으로 직접 적용해본 공간입니다."
 
 # Social icons and sharing options
 #
