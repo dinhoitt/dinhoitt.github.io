@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Mel-Spectrogram&MFCC 비교(with Cepstrum)"
-date:   2024-01-31T03:08:52+09:00
+date:   2024-02-05T03:08:52+09:00
 author: DINHO
 categories:
   - 신호-처리-이론
