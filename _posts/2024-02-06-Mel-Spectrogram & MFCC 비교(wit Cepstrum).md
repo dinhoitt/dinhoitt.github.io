@@ -32,9 +32,9 @@ cover:  "/assets/post/post_mfcc.png"
 
     그래프와 같이 $$S(f) = X(f)H(f)$$였던 식이 $$c[n] = v[n] + u[n]$$ 형태로 바뀐 것을 볼 수 있습니다.
 
-    즉, $$log|S(f)|$$의 Inverse FT을 $$c[n] = v[n] + u[n]$$으로 볼 수 있겠죠.
+    즉, $$logS(f)$$의 Inverse FT을 $$c[n] = v[n] + u[n]$$으로 볼 수 있겠죠.
 
-    또한, $$log|X(f)|$$의 Inverse FT을 $$u[n]$$으로 나타낼 수 임ㅆ고 이는 시간축에서 높은 영역입니다. 아울러 $$log|H(f)|$$의 Inverse FT을 $$v[n]$$으로 나타낼 수 있고 이는 시간 축에서 낮은 영역입니다.
+    또한, $$logX(f)$$의 Inverse FT을 $$u[n]$$으로 나타낼 수 있고 이는 시간축에서 높은 영역입니다. 아울러 $$logH(f)$$의 Inverse FT을 $$v[n]$$으로 나타낼 수 있고 이는 시간 축에서 낮은 영역입니다.
 
     이 때 c[n]을 S(f)의 Cepstrum(캡스트럼)이라고 합니다. Spec-trum(스펙트럼)에서 철자만 바꿔서 Ceps-trum(캡스트럼)이라고 말장난한 겁니다🤣🤣 그래서 위 그림에서 u[n]은 High-Time Cepstrum, v[n]은 Low-Time Cepstrum으로 볼 수 있겠죠?!!
 
