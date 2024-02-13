@@ -26,4 +26,4 @@ cover:  "/assets/post/auffusion_image.png"
 
 ### Forward process
 
-Forward process에서는 노이즈의 분포를 알아내야 합니다. 그 이유는 Reverse process에서 학습할 때 Forward process의 정보를 활용하기 때문이죠. Forward process는 데이터 $$x_0$$ 에서 잠재 변수(latent variable) $$x_T$$ 까지의 고정 마르코프 체인(Markov chain)으로 정의됩니다.
+Forward process에서는 노이즈의 분포를 알아내야 합니다. 그 이유는 Reverse process에서 학습할 때 Forward process의 정보를 활용하기 때문이죠. Forward process는 데이터 $$x_0$$ 에서 잠재 변수(latent variable) $$x_T$$ 까지의 고정 마르코프 체인(Fixed Markov Chain)으로 정의됩니다.
