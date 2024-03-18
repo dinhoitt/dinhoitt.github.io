@@ -6,7 +6,7 @@ author: DINHO
 categories:
   - 인공지능-분야-공부
   - 논문-리뷰
-cover:  "/assets/post/ldm2.png"
+cover:  "/assets/post/VAE_Basic.png"
 ---
 
 오늘은 VAE(Variational autoencoder)에 대해서 이야기해보겠습니다. VAE에 대해 처음으로 소개한 논문은 Kingma와 Welling에 의해 2013년에 작성된 "Auto-Encoding Variational Bayes"입니다. 이 논문에서는 VAE의 기본 원리와 함께, 딥러닝을 이용한 변분 베이지안 추론(Variable Bayesian Inferench)의 새로운 방법을 제시했습니다. 이 논문은 VAE의 이론적 기반을 마련하고, 다양한 분야에서의 응용 가능성을 열어준 중요한 작업으로 평가받고 있습니다. 
@@ -34,3 +34,22 @@ cover:  "/assets/post/ldm2.png"
 # VAE 파헤치기
 
 1. __Method__ 
+
+    <img src="/assets/post/vae_method.png">
+
+    이 논문에서 Auto-Encoding의 Method를 이야기를 하는 section의 전략은 연속 잠재 변수가 있는 다양한 directed graphical 모델에 대한 하한 추정량(stochastic objective function)을 도출하는 데 사용할 수 있습니다. 자세한 설명은 아래와 같습니다.
+
+    - 잠재 변수 $$Z$$ : Z는 모델의 잠재변수입니다. 
+    - Data $$X$$ : X는 모델이 학습하려고 하는 실제 데이터 포인트입니다.
+    - $$\theta$$ : 생성 모델의 파라미터입니다.
+    - Variational parameters $$φ$$ : 변분 추론을 통해 학습되는 파라미터로, $$\theta$$ 와 함께 학습됩니다.
+
+
+    모델에서 실선은 생성 모델 $$p_{\theta}(z)p_{theta}(x\vert z)$$ 를 나타내고 점선은 interactable posterior $$p_{\theta}(z\vert x)$$ 에 대한 변형 근사 $$q_{\fi}(z\vert x)$$ 를 나타냅니다. 
+
+2. __Problem scenario__
+
+    이 부분부터는 어려운 내용이니 요약을 먼저 해보겠습니다. 이 논문에서는 marginal 혹은 posterior probabilities를 직접 계산할 수 
+
+    논문에서 이야기하는 문제 상황에 대해 설명해보겠습니다.
+
