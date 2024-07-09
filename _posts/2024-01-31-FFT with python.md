@@ -52,7 +52,7 @@ void computeDFT(unsigned char* imageData, double* outputReal, double* outputImag
 }
 ```
 
-위에는 DFT, 아래는 FFT를 기본 라이브러리를 이용해서 적은 C코드의 일부입니다. 보시다 시피 4중 for문이 없어지고 2중 for문 많으로 계산할 수 있어서 비교할 수 없을 만큼 빠릅니다.
+위에는 DFT,아래는 FFT를 기본 라이브러리를 이용해서 적은 C코드의 일부입니다. 보시다 시피 4중 for문이 없어지고 2중 for문 많으로 계산할 수 있어서 비교할 수 없을 만큼 빠릅니다.
 
 ```C
 // 2D FFT implementation
