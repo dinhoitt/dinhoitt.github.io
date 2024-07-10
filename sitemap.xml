@@ -33,12 +33,48 @@ layout: null
     </url>
 
     <url>
-        <loc>https://dinhoitt.github.io/python/2024/02/13/%EC%8A%A4%ED%8E%99%ED%8A%B8%EB%A1%9C%EA%B7%B8%EB%9E%A8-&amp;-%EB%A9%9C-%EC%8A%A4%ED%8E%99%ED%8A%B8%EB%A1%9C%EA%B7%B8%EB%9E%A8-with-python.html</loc>
+        <loc>https://dinhoitt.github.io/python/2024/02/13/%EC%8A%A4%ED%8E%99%ED%8A%B8%EB%A1%9C%EA%B7%B8%EB%9E%A8-&-%EB%A9%9C-%EC%8A%A4%ED%8E%99%ED%8A%B8%EB%A1%9C%EA%B7%B8%EB%9E%A8-with-python.html</loc>
     </url>
 
     <url>
         <loc>https://dinhoitt.github.io/%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%EB%B6%84%EC%95%BC-%EA%B3%B5%EB%B6%80/%EB%85%BC%EB%AC%B8-%EB%A6%AC%EB%B7%B0/2024/02/23/HiFi-GAN-%EC%84%A4%EB%AA%85.html</loc>
     </url>
+
+    <url>
+        <loc>https://dinhoitt.github.io/%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%EB%B6%84%EC%95%BC-%EA%B3%B5%EB%B6%80/%EB%85%BC%EB%AC%B8-%EB%A6%AC%EB%B7%B0/2024/02/28/VAE(Variational-autoencoder)-%EC%84%A4%EB%AA%85.html</loc>
+    </url>
+
+    <url>
+        <loc>https://dinhoitt.github.io/%EC%A0%95%EB%B3%B4%EC%9D%B4%EB%A1%A0/2024/04/03/%EC%A0%95%EB%B3%B4%EC%9D%B4%EB%A1%A0.html</loc>
+    </url>
+
+    <url>
+        <loc>https://dinhoitt.github.io/%EC%9E%90%EB%A3%8C%20%EA%B5%AC%EC%A1%B0/2024/04/08/%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0.html</loc>
+    </url>
+
+    <url>
+        <loc>https://dinhoitt.github.io/%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%EB%B6%84%EC%95%BC-%EA%B3%B5%EB%B6%80/%EB%85%BC%EB%AC%B8-%EB%A6%AC%EB%B7%B0/2024/05/01/BigVGAN.html</loc>
+    </url>
+
+    <url>
+        <loc>https://dinhoitt.github.io/%EC%9E%90%EB%A3%8C%20%EA%B5%AC%EC%A1%B0/2024/06/24/%EC%97%B0%EA%B2%B0-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0.html</loc>
+    </url>
+
+    <url>
+        <loc>https://dinhoitt.github.io/c/%EC%8B%A0%ED%98%B8-%EC%B2%98%EB%A6%AC-%EC%9D%B4%EB%A1%A0/2024/07/01/%EC%83%89-%EA%B3%B5%EA%B0%84.html</loc>
+    </url>
+
+    <url>
+        <loc>https://dinhoitt.github.io/python/%EC%8B%A0%ED%98%B8-%EC%B2%98%EB%A6%AC-%EC%9D%B4%EB%A1%A0/2024/07/03/SSIM.html</loc>
+    </url>
+
+    <!--
+    <url>
+        <loc></loc>
+    </url>
+    -->
+
+
 
 
 </urlset>
