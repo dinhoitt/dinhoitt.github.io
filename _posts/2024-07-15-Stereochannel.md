@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Stereo Channel with python"
-date:   2024-07-10T15:08:52+09:00
+date:   2024-07-15T11:08:52+09:00
 author: DINHO
 categories:
   - Python
