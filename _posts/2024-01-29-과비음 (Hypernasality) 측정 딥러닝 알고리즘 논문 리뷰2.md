@@ -9,7 +9,7 @@ cover:  "/assets/post_논문리뷰1.png"
 
 지난번에 이어서 "Mathad, Vikram C., et al. "A deep learning algorithm for objective assessment of hypernasality in children with cleft palate." IEEE Transactions on Biomedical Engineering 68.10 (2021): 2986-2996." 논문 리뷰를 이어서 하겠습니다. 
 
-지난번 [논문 리뷰1](https://dinhoitt.github.io/%EB%85%BC%EB%AC%B8-%EB%A6%AC%EB%B7%B0/2024/01/17/%EA%B3%BC%EB%B9%84%EC%9D%8C-(Hypernasality)-%EC%A7%84%EB%8B%A8-%EB%94%A5%EB%9F%AC%EB%8B%9D-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%85%BC%EB%AC%B8-%EB%A6%AC%EB%B7%B0-copy.html)에서는 구개열(Cleft Palate)과 구강, 비강 조음들을 알아보았는데요. 이번에는 본격적으로 데이터셋이나 어떤 구조의 DNN 모델인지 알아보도록 하겠습니다😀😀 아울러 이번 글에서 MFCC라는 전처리 특징이 언급되는데요. 이부분에 대한 설명은 제 블로그 __신호 처리 이론__ 카테고리에서 추후에 다루어보도록 하겠습니다😊😊👍👍
+지난번 [논문 리뷰1](https://dinhoitt.github.io/category/%EC%8B%A0%ED%98%B8-%EC%B2%98%EB%A6%AC-%EC%9D%B4%EB%A1%A0/)에서는 구개열(Cleft Palate)과 구강, 비강 조음들을 알아보았는데요. 이번에는 본격적으로 데이터셋이나 어떤 구조의 DNN 모델인지 알아보도록 하겠습니다😀😀 아울러 이번 글에서 MFCC라는 전처리 특징이 언급되는데요. 이부분에 대한 설명은 제 블로그 [신호-처리-이론](https://dinhoitt.github.io/%EB%85%BC%EB%AC%B8-%EB%A6%AC%EB%B7%B0/2024/01/17/%EA%B3%BC%EB%B9%84%EC%9D%8C-(Hypernasality)-%EC%A7%84%EB%8B%A8-%EB%94%A5%EB%9F%AC%EB%8B%9D-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%85%BC%EB%AC%B8-%EB%A6%AC%EB%B7%B0-copy.html) 카테고리에서 추후에 다루어보도록 하겠습니다😊😊👍👍
 
 # DATABASES
 
@@ -58,7 +58,7 @@ $$OHM(x_i) = \max \left( \log \left( \frac{P(NC|x_i)}{P(OC|x_i)} \right), \log \
 OHM은 이 논문에서 제안한 과비음 측정법입니다. 지난번 [논문 리뷰1](https://dinhoitt.github.io/%EB%85%BC%EB%AC%B8-%EB%A6%AC%EB%B7%B0/2024/01/17/%EA%B3%BC%EB%B9%84%EC%9D%8C-(Hypernasality)-%EC%A7%84%EB%8B%A8-%EB%94%A5%EB%9F%AC%EB%8B%9D-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%85%BC%EB%AC%B8-%EB%A6%AC%EB%B7%B0-copy.html) 기억하시나요?? 
 
 비강 자음음이 없는 문장을 발음했는데 P(NC)가 높으면?? 즉 
-$P(NC|x_i)$
+$$P(NC|x_i)$$
 가 높으면?? OHM이 커지고 과비음임을 알 수 있겠죠?? 굉장히 단순한 논리를 통해 OHM이라는 측정법을 제안했습니다. 
 
 근데 여기서 왜 비강 자음과 비강 자음의 최댓값을 이용할까요?? 논문에서 이유는 자세히 나와 있지 않아서 제가 생각해봤는데요. 일단 문장에서 비강 모음을 하나도 쓰지 않는 경우가 있습니다. 심지어 비강 모음을 콧소리를 쓰지 않고 발음을 하려면 할 수 있습니다. 그렇기 때문에 한 문장에서 비강 자음을 발음할 때는 과비음인 것 같은데. 비강 모음은 과비음이 아닌 것 같은 상황이 나올 수 있겠죠?? 이를 단순화하고 정확한 과비음 정도를 측정하기 위해 최댓값을 이용하는 것 같습니다.
