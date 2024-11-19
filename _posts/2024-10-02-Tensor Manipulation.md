@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Transformer란?"
+title:  "Pyorch Tensor manipulation"
 date:   2024-10-02T20:08:52+09:00
 author: DINHO
 categories:
