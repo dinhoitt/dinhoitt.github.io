@@ -1,13 +1,14 @@
 ---
 layout: post
 title:  "Transformer란?"
-date:   2024-10-25T20:08:52+09:00
+date:   2024-10-09T20:08:52+09:00
 author: DINHO
 categories:
   - 인공지능-분야-공부
   - 논문-리뷰
 cover:  "/assets/post/transformer.png"
 ---
+
 오랜만에 논문 리뷰입니다. 지난 번 논문 리뷰 때 [MusicGen](https://dinhoitt.github.io/%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%EB%B6%84%EC%95%BC-%EA%B3%B5%EB%B6%80/%EB%85%BC%EB%AC%B8-%EB%A6%AC%EB%B7%B0/2024/08/05/MusicGen%EC%9D%B4%EB%9E%80.html) 이야기를 했었는데요! 
 MusicGen Decoder의 기반이 되기도 하고, 인공지능을 공부하는 사람이라면 절대로 몰라선 안 되는!!! Transformer, Attention Is All You Need(2017) 논문 리뷰를 해보겠습니다.
 
