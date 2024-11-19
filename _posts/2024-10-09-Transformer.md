@@ -27,20 +27,20 @@ MusicGen Decoder의 기반이 되기도 하고, 인공지능을 공부하는 사
 
     Transformer는 인코더-디코더 구조를 따르며, 일반적인 Sequence to Sequence 작업에 적합하게 설계되었습니다. 그림의 왼쪽과 오른쪽 부분에 표시된 것처럼 인코더와 디코더 모두에 stacked self-attention and point-wise, fully connected layers를 사용하는 아키텍처를 따릅니다.
 
-    ### 2.1 Encoder and Decoder Stacks ###
+    __2.1 Encoder and Decoder Stacks__
 
-    - Encoder : 인코더는 동일한 레이어의 스택(Stack of identical layer)으로 구성되어 있습니다(일반적으로 N=6). 각 레이어는 두 서브레이어(Sub-layer)가 있습니다. 첫 번째는 __multi-head self-attention(멀티헤드 셀프어텐션)__ 이고 두 번째는 __position-wise fully connected feed-forward network__ 입니다. 이 때 두 서브 레이어에 잔차 연결(residual connection)을 사용한 다음, 레이어 정규화를 수행합니다. 즉, $Sublayer Output = LayerNorm(x + Sublayer(x))$ 함수 식으로 표현할 수 있습니다. 이 때 x는 서브 레이어의 입력, $Sublayer(x)$ 는 해당 서브레이어의 출력이고, 이후에 레이어 정규화를 진행합니다. 이러한 잔차 연결을 용이하게 하기 위해 모든 모델의 서브레이어와 임베딩 레이어는 512 차원의 output을 생상합니다.
+    - Encoder : 인코더는 동일한 레이어의 스택(Stack of identical layer)으로 구성되어 있습니다(일반적으로 N=6). 각 레이어는 두 서브레이어(Sub-layer)가 있습니다. 첫 번째는 __multi-head self-attention(멀티헤드 셀프어텐션)__ 이고 두 번째는 __position-wise fully connected feed-forward network__ 입니다. 이 때 두 서브 레이어에 잔차 연결(residual connection)을 사용한 다음, 레이어 정규화를 수행합니다. 즉, $$Sublayer Output = LayerNorm(x + Sublayer(x))$$ 함수 식으로 표현할 수 있습니다. 이 때 x는 서브 레이어의 입력, $$Sublayer(x)$$ 는 해당 서브레이어의 출력이고, 이후에 레이어 정규화를 진행합니다. 이러한 잔차 연결을 용이하게 하기 위해 모든 모델의 서브레이어와 임베딩 레이어는 512 차원의 output을 생상합니다.
 
     - Decoder : 디코더 역시 동일한 레이어의 스택으로 구성되어 있습니다. 다만 디코더에서는 인코더와 달리 세 개의 서브레이어가 있습니다. 새로 추가된 서브레이어는 인코더 스택의 아웃풋에 대한 멀티헤드 어텐션을 수행하고, 이외의 구조는 인코더와 같습니다. 이 때 디코더 스텍에서 셀프어텐션 서브레이어가 이전과 현재 위치만 참조하고, 이후의 위치를 참조하지 않도록 위치를 수정했습니다. 이 이유는 디코더가 __순차적 예측(autoregressive prediction)__ 을 수행하기 때문입니다. 즉, 디코더는 한 번에 하나씩 다음 단어를 예측하는 방식으로 작동하며, 이전에 예측한 단어들만을 참고해서 연재 단어를 예측할 수 있어야 합니다. 다시 말하면, 각 위치가 미래 단어들을 참조하지 못하도록 해야 합니다. 이를 구현하기 위해 __마스킹__ 기법을 사용합니다. 
 
-    ### 2.2 Attention ###
+    __2.2 Attention__
 
     <img src="/assets/post/attention.png">
     _그림2 - (왼쪽) Scaled Dot-Product Attention. (오른쪽) Multi-Head Attention은 병렬로 실행되는 여러 어텐션 레이어로 구성_
 
     어텐션 함수는 Query와 key-value 세트를 출력에 매핑하는 것으로 설명할 수 있으며, 여기서 Q, K, V는 모두 벡터입니다. 출력은 V의 가중 합(weighted sum)으로 계산되며, 각 값에 할당된 가중치는 해당 K와 Q의 호환성 함수(Compatibility function)에 의해 계산됩니다.
 
-    - __Scaled Dot-Product Attention__ : 입력은 K와 V의 차원 $d_{K}, d_{V}$ 로 구성됩니다. 수식은 아래와 같습니다. 
+    - __Scaled Dot-Product Attention__ : 입력은 K와 V의 차원 $$d_{K}, d_{V}$$ 로 구성됩니다. 수식은 아래와 같습니다. 
 
     $$
     \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right) V
@@ -92,7 +92,7 @@ MusicGen Decoder의 기반이 되기도 하고, 인공지능을 공부하는 사
     Q, K, V 값을 h번 선형적으로 투영하는 것이 유익하다는 것을 발견합니다. 이러한 각 투영된 Q, K, V 버전에서 어텐션 함수를 병렬로 수행하여 $d_v$ 차원의 출력 값을 생성합니다. 
     이러한 값을 연결하고 다시 투영하여 그림 2에 나와 있는 것처럼 최종 값을 생성합니다.
 
-    예를 들어 $d_model$ 차원이 512이고, h = 8 의 병렬 어텐션 레이어면, $d_{k} = d_{v} = d_{model}/h = 64$ 로 사용할 수 있습니다. 
+    예를 들어 $d_model$ 차원이 512이고, h = 8 의 병렬 어텐션 레이어면, $$d_{k} = d_{v} = d_{model}/h = 64$$ 로 사용할 수 있습니다. 
     각 헤드의 차원이 줄어들었기 때문에 전체 계산 비용은 전체 차원에 대해 계산한 단일 어텐션과 유사합니다. 그러면 수식을 보겠습니다.
 
     $$
@@ -114,7 +114,7 @@ MusicGen Decoder의 기반이 되기도 하고, 인공지능을 공부하는 사
 
     이렇게 여러 관점에서 학습된 정보가 결합되면, 한 번에 문장을 처리할 수 있고, 모델이 문장을 더욱 풍부하게 이해하고 표현할 수 있습니다.
 
-    ### Position-wise Feed-Forward Networks ###
+    __Position-wise Feed-Forward Networks__
 
     이 네트워크는 Self-Attention 층을 거친 각 위치의 출력을 개별적으로 처리하여 모델이 각 단어의 특징을 더 복잡하게 변환할 수 있도록 도와줍니다. 
     이 과정은 시퀀스 내의 각 위치에서 독립적으로 적용되므로, 인코더나 디코더가 시퀀스의 특정 위치의 정보를 더욱 복잡하고 비선형적으로 변환할 수 있습니다.
@@ -128,12 +128,12 @@ MusicGen Decoder의 기반이 되기도 하고, 인공지능을 공부하는 사
     이 단계에서 비선형 변환을 통한 복잡한 특징을 학습합니다. 이후 두 번째 가중치를 곱하고 바이어스를 더해 최종 출력을 얻습니다. 이 과정에서 다시 원래 모델의 차원으로 돌려 놓습니다.
     이 과정은 시퀀스 내의 각 위치에서 독립적으로 적용되므로, 인코더나 디코더가 시퀀스의 특정 위치의 정보를 더욱 복잡하고 비선형적으로 변환할 수 있습니다.
 
-    ### Embeddings and Softmax ###
+    __Embeddings and Softmax__
 
     다른 시퀀스 변환 모델과 마찬가지로 학습된 임베딩을 사용하여 입력 토큰과 출력 토큰을 $d_model$ 차원의 벡터로 변환합니다.
     일반적인 학습된 선형 변환과 소프트맥스 함수를 사용하여 디코더 출력을 예측한 다음 토큰 확률로 변환합니다.
 
-    ### Positional Encoding(PE) ###
+    __Positional Encoding(PE)__
 
     Transformer 모델에서 위치 정보를 나타내기 위해 사용되는 메커니즘입니다.
     RNN과 달리 Transformer는 순차적인 순서를 따르지 않기 때문에 위치 정보를 내재적으로 알 수 없습니다.
