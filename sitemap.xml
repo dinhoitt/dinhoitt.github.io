@@ -1,7 +1,6 @@
 ---
 layout: null
 ---
-
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
@@ -94,6 +93,22 @@ layout: null
 
     <url>
         <loc>https://dinhoitt.github.io/c/%EC%8B%A0%ED%98%B8-%EC%B2%98%EB%A6%AC-%EC%9D%B4%EB%A1%A0/2024/08/19/Raw-to-Bmp-and-Bmp-to-Raw.html</loc>
+    </url>
+
+    <url>
+        <loc>https://dinhoitt.github.io/c/%EC%8B%A0%ED%98%B8-%EC%B2%98%EB%A6%AC-%EC%9D%B4%EB%A1%A0/2024/08/26/Raw-to-YUV-and-YUV-to-RAW.html</loc>
+    </url>
+
+    <url>
+        <loc>https://dinhoitt.github.io/python/2024/10/02/Tensor-Manipulation.html</loc>
+    </url>
+
+    <url>
+        <loc>https://dinhoitt.github.io/%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%EB%B6%84%EC%95%BC-%EA%B3%B5%EB%B6%80/%EB%85%BC%EB%AC%B8-%EB%A6%AC%EB%B7%B0/2024/10/09/Transformer.html</loc>
+    </url>
+
+    <url>
+        <loc>https://dinhoitt.github.io/%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%EB%B6%84%EC%95%BC-%EA%B3%B5%EB%B6%80/%EB%85%BC%EB%AC%B8-%EB%A6%AC%EB%B7%B0/2024/10/23/Encodec.html</loc>
     </url>
 
     <!--
