@@ -49,7 +49,7 @@ Python의 input() 함수는 사용자로부터 입력을 받는 데 사용되는
 
     ```Python
     # 예시 3
-    
+
     a = int(input())
     b = float(input())
 
@@ -114,7 +114,7 @@ Python의 input() 함수는 사용자로부터 입력을 받는 데 사용되는
     """
     입력값이 "banana"인 경우 count는 3이 됩니다.
     """
-    ```
+```
 
 8. __map(함수, 반복가능데이터)__
 
@@ -125,14 +125,14 @@ Python의 input() 함수는 사용자로부터 입력을 받는 데 사용되는
 
     a, b = map(int, input().split())
 
-    """
-    입력이 "2 3" 이면 a와 b는 각각 2와 3(정수)이 됩니다.
-    """
+"""
+입력이 "2 3" 이면 a와 b는 각각 2와 3(정수)이 됩니다.
+"""
 
-    numbers = [1, 2, 3, 4, 5]
-    squared = list(map(lambda x: x**2, numbers))
-    print(squared)  # [1, 4, 9, 16, 25]
-    ```
+numbers = [1, 2, 3, 4, 5]
+squared = list(map(lambda x: x**2, numbers))
+print(squared)  # [1, 4, 9, 16, 25]
+```
 
 그렇다면 아래 백준 예제와 풀이를 소개해드리면서 오늘 포스팅 마치겠습니다.
 
