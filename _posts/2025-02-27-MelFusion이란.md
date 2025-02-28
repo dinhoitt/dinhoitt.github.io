@@ -124,13 +124,8 @@ Text-to-Music 모델들은 주어진 텍스트 설명을 바탕으로 음악을 
 논문에서는 전체적인 프레임 워크를 알고리즘으로 잘 적어 두었습니다. 참고하시면 좋을 것 같습니다.
 
 <div align="center">
-	<img src="/assets/post/melfusion3.png" alt="[알고리즘 1] MeLFusion: Training">
-	<p><em>[알고리즘 1] MeLFusion: Training</em></p>
-</div>
-
-<div align="center">
-	<img src="/assets/post/melfusion4.png" alt="[알고리즘 2] MeLFusion: Sampling">
-	<p><em>[알고리즘 2] MeLFusion: Sampling</em></p>
+	<img src="/assets/post/melfusion4.png" alt="MeLFusion: Training and Sampling">
+	<p><em>[알고리즘] MeLFusion: Training and Sampling</em></p>
 </div>
 
 # Experiments and Results
