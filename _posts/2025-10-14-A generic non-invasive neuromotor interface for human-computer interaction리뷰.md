@@ -246,8 +246,13 @@ LSTM을 어떻게 사용했는지 요약하자면 아래와 같습니다.
 	
 	- Contrastive Learning
 
+	- 계층적 LSTM으로 불변성 학습
+	
+	- 환자별 fine-tuning (논문에서 학습 데이터 규모가 커졌을 때 fine-tuning은 의미 없다 했지만 데이터가 부족한 상황에서는 유의미하다고 언급)
+
+
 3. __MPF Features 도입__
 
-	“MPF features offer clear advantages on the wrist classification task over RMS power”
+	“MPF features offer clear advantages on the wrist classification task over RMS power” 논문에서 언급
 
-4. __계층적 LSTM으로 불변성 학습__
+이런 식으로 항상 논문을 프로젝트에 어떻게 적용할까 고민합니다. 😊😊 오늘 포스팅 마무리하겠습니다.
