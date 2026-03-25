@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Linear Regression"
+title:  "Linear Regression with Python"
 date:   2025-10-20T20:08:52+09:00
 author: DINHO
 categories:
