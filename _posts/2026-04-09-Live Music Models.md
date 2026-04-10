@@ -9,8 +9,6 @@ categories:
 cover:  "/assets/post/livemusic.png"
 ---
 
-안녕하세요! 오늘은 구글 딥마인드 팀에서 발표한 논문인 Live Music Models(2025) 논문을 리뷰해보겠습니다. 논문의 섹션 흐름에 따라 작성하겠습니다.
-
 안녕하세요! 오늘은 Google DeepMind의 Lyria Team에서 발표한 "Live Music Models" 논문에 대해 리뷰를 해보겠습니다. 이 논문은 NeurIPS 2025 Creative AI Track에 게재된 논문으로, **실시간 라이브 음악 생성**이라는 새로운 패러다임을 제시합니다.
 
 Introduction, Method, Experiments, Controllable Generation, Conclusion 순서로 이야기하겠습니다.
