@@ -20,7 +20,7 @@ Email: taesoo0707@kw.ac.kr
 - **BemaGANv2: Discriminator Combination Strategies for GAN-based Vocoders in Long-Term Audio Generation**  
   - ICT Express (Under Review) [preprint](https://arxiv.org/abs/2506.09487)
 
----
+
 
 ### 🌍 International Conferences
 
@@ -33,7 +33,6 @@ Email: taesoo0707@kw.ac.kr
 - **BemaGANv2: A Vocoder with Superior Periodicity Capture for Long-Term Audio Generation**  
   - ICAIIC 2026 (Selected Paper) [link](https://ieeexplore.ieee.org/document/10920769)
 
----
 
 ### 🇰🇷 Domestic Conferences
 
@@ -41,7 +40,6 @@ Email: taesoo0707@kw.ac.kr
 
 - BemaGAN: 다중 엔벨로프 판별기를 적용한 생성적 적대 신경망, 대한전자공학회
 
----
 
 ### 🔬 Research Projects
 
@@ -49,7 +47,6 @@ Email: taesoo0707@kw.ac.kr
 
 - EMG 기반 의족 제어 시스템 (서울아산병원, 2025~) 
 
----
 
 ### 🧾 Patent
 
@@ -60,15 +57,13 @@ Email: taesoo0707@kw.ac.kr
 
 ## 🚀 Projects
 
----
-
 ### 🎧 1. 개인 맞춤형 이명 디지털 치료제 (Generative AI 기반)
 
 <img src="/assets/portfolio5.png" width="100%">
 
 <img src="/assets/portfolio6.png" width="100%">
 
----
+
 
 ### 🦿 2. 로봇 의족 동작을 위한 실시간 생체 신호 분석
 
