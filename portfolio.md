@@ -13,18 +13,6 @@ Email: taesoo0707@kw.ac.kr
 
 ---
 
-## 🧠 Research Interests
-
-- Generative AI (Text-to-Audio / Text-to-Music)
-
-- Signal Processing
-
-- Medical AI 
-
-- Multimodal AI (Audio + Vision)
-
----
-
 ## 📄 Publications & Research Outputs
 
 ### 📝 Journal
@@ -49,7 +37,7 @@ Email: taesoo0707@kw.ac.kr
 
 ### 🇰🇷 Domestic Conferences
 
-- BemaGANv2의 짧은 시간 오디오 복원 성능 저하에 대한 이론적 분석, 한국방송미디어공학회회
+- BemaGANv2의 짧은 시간 오디오 복원 성능 저하에 대한 이론적 분석, 한국방송미디어공학회
 
 - BemaGAN: 다중 엔벨로프 판별기를 적용한 생성적 적대 신경망, 대한전자공학회
 
@@ -101,7 +89,3 @@ Email: taesoo0707@kw.ac.kr
 - 실제 서비스/임상 적용 경험 보유
 
 ---
-
-## 📫 Contact
-- Email: taesoo0707@kw.ac.kr
-- GitHub: https://github.com/dinhoitt
