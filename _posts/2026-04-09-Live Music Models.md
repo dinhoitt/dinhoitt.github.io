@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Live Music Models 리뷰?"
+title:  "Live Music Models 리뷰"
 date:   2026-04-09T20:08:52+09:00
 author: DINHO
 categories:
