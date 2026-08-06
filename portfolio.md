@@ -24,9 +24,6 @@ Email: taesoo0707@kw.ac.kr
 
 ### 🌍 International Conferences
 
-- **AuDiTory: Audio-driven Diffusion for Storyboard Generation via Audio-Text Multi-Modal Fusion**  
-  - ECCV 2026 (Submitted)
-
 - **AI-Based Adaptive Audio Generation with Frequency-Specific Processing**  
   - ICGHIT 2026 
 
