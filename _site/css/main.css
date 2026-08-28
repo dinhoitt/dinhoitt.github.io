@@ -417,7 +417,8 @@ pre code.hljs {
       content: "";
       display: table; }
   .page-content .post-list {
-    padding-top: 1em !important; }
+    padding-top: 1em !important;
+    text-align: center; }
   .page-content .post-meta {
     max-width: 48em;
     margin-left: auto;
@@ -475,6 +476,8 @@ pre code.hljs {
     padding-bottom: 1em; }
   .page-content .post .post-content {
     padding: 1em 0; }
+  .page-content .post .comment-section {
+    padding: 1em 0; }
   .page-content .post .tags {
     font-size: 0.9em; }
   .page-content .post .rss {
@@ -517,13 +520,6 @@ pre code.hljs {
       width: 1em;
       padding: 0 0.25em;
       text-decoration: none; }
-  .page-content .post .disqus {
-    float: left;
-    display: block;
-    margin-right: 2.3576515979%;
-    width: 100%; }
-    .page-content .post .disqus:last-child {
-      margin-right: 0; }
   .page-content .post .post-navigation {
     font-size: 0.9em;
     display: block;

@@ -7,7 +7,9 @@ main_nav: true
 
 # 박태수 | Portfolio
 
-석사과정 연구원 (Digital Media Lab.)  
+인턴 연구원 (Biomedical Intelligence Lab. at Seoul National University)
+
+석사과정 연구원 (Digital Media Lab. at Kwangwoon Univ.)  
 
 Email: taesoo0707@kw.ac.kr
 
@@ -19,8 +21,6 @@ Email: taesoo0707@kw.ac.kr
 
 - **BemaGANv2: Discriminator Combination Strategies for GAN-based Vocoders in Long-Term Audio Generation**  
   - ICT Express (Under Review) [preprint](https://arxiv.org/abs/2506.09487)
-
-
 
 ### 🌍 International Conferences
 
